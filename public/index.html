@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Picture Gallery</title>
+    <style>
+        /* CSS for styling the gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
+            margin: 10px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Picture Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+</body>
+</html>
